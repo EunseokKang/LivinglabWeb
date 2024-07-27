@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인인거시야요</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-auto ml-3">
+                <img src="{% static 'img/Djelogo.png' %}" width="64px" height="64px" alt="대전광역시 로고">
+            </div>
+            <div class="col">
+                <p class="mb-0">대전광역시 범죄 피해자 통합 지원 플랫폼</p>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="border p-3 text-center" style="min-height: 500px;">
+                        <p>심리</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="{{ request.build_absolute_uri }}psy-1">심리상담</a></li>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="border p-3 text-center" style="min-height: 500px;">
+                        <p>경제</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">긴급금융지원</li>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="border p-3 text-center" style="min-height: 500px;">
+                        <p>법률</p>
+                        <ul class="list-group-item">법률상담</li>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="border p-3 text-center" style="min-height: 500px;">
+                        <p>기타</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
