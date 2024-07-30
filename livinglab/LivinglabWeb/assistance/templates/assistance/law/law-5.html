@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배상명령 제도</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center my-5">
+        <h2>"가해자의 보복이 두려워 떨고 있으신가요?"</h2>
+        <p>보복을 당할 우려가 있는 범죄피해자는 신변보호조치를 받을 수 있습니다.</p>
+    </div>
+
+    <div class="container my-5">
+        <div class="row mb-4">
+            <div class="col-3 text-center">
+                <img src="{% static 'img/shield.png' %}" class="img-fluid" alt="신변보호조치">
+            </div>
+            <div class="col-9">
+                <h4>신변보호조치 제도</h4>
+                <p>범죄피해자가 수사 또는 재판 과정에서 가해자로부터 해를 입었거나 입을 우려가 있는 경우에 신변보호조치를 해 주는 제도입니다. 수사기관이 구체적인 피해 사실 등을 토대로 위험성 유무를 판단해 지원해 줍니다.</p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-3 text-center">
+                <img src="{% static 'img/target.png' %}" class="img-fluid" alt="지원 대상">
+            </div>
+            <div class="col-9">
+                <h4>지원 대상</h4>
+                <p>보복을 당할 우려가 있는 범죄피해자 외에 신고자, 목격자, 참고인 및 그 친족들도 신변보호조치를 받을 수 있습니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <a href="{% static 'file/test.pdf' %}" download class="d-flex align-items-center">
+            <span>양식</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
